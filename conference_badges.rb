@@ -1,5 +1,3 @@
-require 'pry'
-
 def badge_maker(name)
     "Hello, my name is #{name}."
 end
@@ -34,7 +32,6 @@ end
 
 def printer(names_array)
     batch_badge_creator(names_array).each do |each_badge|
-        #binding.pry
         puts each_badge
     end
     assign_rooms(names_array).each do |room_assignments|
