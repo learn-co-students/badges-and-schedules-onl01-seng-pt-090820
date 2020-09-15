@@ -19,6 +19,11 @@ def assign_rooms(attendees)
   room_assignments
 end
 
-def printer
-#needs to puts out both the badges and room assignments
+def printer(attendees)
+  badges.each do |badge|
+    puts badge
+  end
+  room_assignments.each do |room|
+    puts room
+  end
 end
